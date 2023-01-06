@@ -13,7 +13,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="src\" />
+    <Folder Include="Commands\TypeTask\" />
+    <Folder Include="Commands\Task\" />
+    <Folder Include="Mappings\TypeTask\" />
+    <Folder Include="Mappings\Task\" />
+    <Folder Include="Queries\TypeTask\" />
+    <Folder Include="Queries\Task\" />
+    <Folder Include="ViewModels\TypeTask\" />
+    <Folder Include="ViewModels\Task\" />
   </ItemGroup>
 
 </Project>
