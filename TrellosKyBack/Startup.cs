@@ -25,6 +25,7 @@ namespace TrellosKyBack
         }
 
         public IConfiguration Configuration { get; }
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -48,6 +49,17 @@ namespace TrellosKyBack
 
             // Add Automapper
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+
+            //Add Cors
+            services.AddCors(options =>
+            {
+                options.AddPolicy(MyAllowSpecificOrigins,
+                builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -70,6 +82,8 @@ namespace TrellosKyBack
             {
                 endpoints.MapControllers();
             });
+
+            app.UseCors(MyAllowSpecificOrigins);
         }
     }
 }

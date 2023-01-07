@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -29,7 +30,8 @@ namespace TrellosKyBackAPI.Controllers
         /// 
         /// </summary>
         /// <returns></returns>
-        /// 
+        ///
+        [EnableCors("_myAllowSpecificOrigins")]
         [HttpGet]
         [Route("GetAll")]
         [ProducesResponseType(200)]
@@ -49,6 +51,7 @@ namespace TrellosKyBackAPI.Controllers
         /// <param name="taskId"></param>
         /// <returns></returns>
         /// 
+        [EnableCors("_myAllowSpecificOrigins")]
         [HttpGet]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
