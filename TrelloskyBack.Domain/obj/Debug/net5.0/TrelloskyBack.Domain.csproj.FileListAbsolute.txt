@@ -1,0 +1,12 @@
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrelloskyBack.Domain\bin\Debug\net5.0\TrelloskyBack.Domain.deps.json
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrelloskyBack.Domain\bin\Debug\net5.0\TrelloskyBack.Domain.dll
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrelloskyBack.Domain\bin\Debug\net5.0\ref\TrelloskyBack.Domain.dll
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrelloskyBack.Domain\bin\Debug\net5.0\TrelloskyBack.Domain.pdb
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrelloskyBack.Domain\obj\Debug\net5.0\TrelloskyBack.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrelloskyBack.Domain\obj\Debug\net5.0\TrelloskyBack.Domain.AssemblyInfoInputs.cache
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrelloskyBack.Domain\obj\Debug\net5.0\TrelloskyBack.Domain.AssemblyInfo.cs
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrelloskyBack.Domain\obj\Debug\net5.0\TrelloskyBack.Domain.csproj.CoreCompileInputs.cache
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrelloskyBack.Domain\obj\Debug\net5.0\TrelloskyBack.Domain.dll
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrelloskyBack.Domain\obj\Debug\net5.0\ref\TrelloskyBack.Domain.dll
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrelloskyBack.Domain\obj\Debug\net5.0\TrelloskyBack.Domain.pdb
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrelloskyBack.Domain\obj\Debug\net5.0\TrelloskyBack.Domain.csproj.AssemblyReference.cache
