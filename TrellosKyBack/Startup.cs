@@ -76,14 +76,14 @@ namespace TrellosKyBack
 
             app.UseRouting();
 
+            app.UseCors(MyAllowSpecificOrigins);
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
-
-            app.UseCors(MyAllowSpecificOrigins);
         }
     }
 }
