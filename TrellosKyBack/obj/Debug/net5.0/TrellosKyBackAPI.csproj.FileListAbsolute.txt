@@ -61,3 +61,9 @@ C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrellosKyBack\bin\Debug\net5.0
 C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrellosKyBack\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrellosKyBack\bin\Debug\net5.0\TrelloskyBack.Domain.dll
 C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrellosKyBack\bin\Debug\net5.0\TrelloskyBack.Domain.pdb
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrellosKyBack\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrellosKyBack\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrellosKyBack\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrellosKyBack\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrellosKyBack\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\JFLOREZ\Documents\Projects\TrelloskyBack\TrellosKyBack\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

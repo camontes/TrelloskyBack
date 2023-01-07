@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "YdmCKqVrZ3y5czQOBxd7Kd38BH4Jzw7X9aefJPk3P92aGuNyF1PqDF6sZBhaBgX1mgoIAZnMHQphLUGIfscg5w==",
+  "dgSpecHash": "Bj9W6snQ05/0VDfGQ5KNoLB96rjCcgvlX5Rn9MjGmWcy3Hi4sSPbhXHaSeesnZBWFvwjA9C53lM6jQtlHigqAw==",
   "success": true,
   "projectFilePath": "C:\\Users\\JFLOREZ\\Documents\\Projects\\TrelloskyBack\\TrelloskyBack.Domain\\TrelloskyBack.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\JFLOREZ\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\JFLOREZ\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\JFLOREZ\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\JFLOREZ\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\JFLOREZ\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\JFLOREZ\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\JFLOREZ\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\JFLOREZ\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

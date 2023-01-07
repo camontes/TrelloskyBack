@@ -13,6 +13,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TrellosKyBackAPI.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using TrellosKyBackAPI.Queries.Task;
 
 namespace TrellosKyBack
 {
@@ -35,9 +36,18 @@ namespace TrellosKyBack
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TrellosKyBack", Version = "v1" });
             });
 
+            //Tasks
+            services.AddScoped<ITaskQueries, TaskQueries>();
+
+
+
+            //Add Sql Server
             services.AddDbContext<ApplicationDbContext>
                 (o => o.UseSqlServer(Configuration.
                 GetConnectionString("TrelloConStr")));
+
+            // Add Automapper
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
