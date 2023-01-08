@@ -92,7 +92,20 @@ namespace TrellosKyBackAPI.Controllers
         }
 
 
-       
+        [EnableCors("_myAllowSpecificOrigins")]
+        [HttpPut]
+        [Route("UpdateTask")]
+        public async Task<TaskViewModel> UpdateTaskAsync(UpdateTaskCommand updateTaskCommand)
+        {
+            TaskT existingTask = _mapper.Map<TaskT>(updateTaskCommand);
+
+            await _Behavior.UpdateTaskAsync(existingTask);
+
+            TaskViewModel taskViewModel = await _Queries.FindByIdAsync(existingTask.Id);
+
+            return taskViewModel;
+
+        }
 
     }
 }
