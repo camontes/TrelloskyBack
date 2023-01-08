@@ -95,6 +95,7 @@ namespace TrellosKyBackAPI.Controllers
         [EnableCors("_myAllowSpecificOrigins")]
         [HttpPut]
         [Route("UpdateTask")]
+        [ProducesResponseType(204)]
         public async Task<TaskViewModel> UpdateTaskAsync(UpdateTaskCommand updateTaskCommand)
         {
             TaskT existingTask = _mapper.Map<TaskT>(updateTaskCommand);
@@ -105,6 +106,28 @@ namespace TrellosKyBackAPI.Controllers
 
             return taskViewModel;
 
+        }
+
+
+        [EnableCors("_myAllowSpecificOrigins")]
+        [HttpDelete]
+        [Route("DeleteTask")]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(404)]
+        public async Task<ActionResult<int>> DeleteTaskAsync(int id)
+        {
+            TaskViewModel existingTask = await  _Queries.FindByIdAsync(id);
+
+            if (existingTask == null)
+            {
+                return NotFound("Task not found");
+            }
+
+            TaskT deleteTask = _mapper.Map<TaskT>(existingTask);
+
+            await _Behavior.DeleteTaskAsync(deleteTask);
+
+            return id;
         }
 
     }
