@@ -6,9 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Behaviors\TypeTask\" />
-    <Folder Include="Behaviors\Task\" />
     <Folder Include="Repositories\TypeTask\" />
-    <Folder Include="Repositories\Task\" />
   </ItemGroup>
 
   <ItemGroup>

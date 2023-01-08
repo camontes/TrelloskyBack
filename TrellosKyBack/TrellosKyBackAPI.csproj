@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <Folder Include="Commands\TypeTask\" />
-    <Folder Include="Commands\Task\" />
     <Folder Include="Mappings\TypeTask\" />
     <Folder Include="Queries\TypeTask\" />
   </ItemGroup>

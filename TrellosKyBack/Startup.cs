@@ -14,6 +14,9 @@ using System.Threading.Tasks;
 using TrellosKyBackAPI.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using TrellosKyBackAPI.Queries.Task;
+using TrelloskyBack.Domain.Behaviors.TaskTrello;
+using TrelloskyBack.Domain.Repositories.TaskTrello;
+using TrellosKyBackAPI.Infrastructure.Repositories.TaskTrello;
 
 namespace TrellosKyBack
 {
@@ -37,8 +40,16 @@ namespace TrellosKyBack
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TrellosKyBack", Version = "v1" });
             });
 
-            //Tasks
+            //Tasks-----------------------
+
+            //Queries
             services.AddScoped<ITaskQueries, TaskQueries>();
+
+            //Behavior
+            services.AddScoped<ITaskBehavior, TaskBehavior>();
+
+            //Repository
+            services.AddScoped<ITaskRepository, TaskRepository>();
 
 
 

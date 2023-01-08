@@ -5,6 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TrelloskyBack.Domain.Behaviors.TaskTrello;
+using TrelloskyBack.Domain.Models;
+using TrellosKyBackAPI.Commands.Task;
 using TrellosKyBackAPI.Queries.Task;
 using TrellosKyBackAPI.ViewModels.Task;
 
@@ -15,14 +18,17 @@ namespace TrellosKyBackAPI.Controllers
     public class TaskController : ControllerBase
     {
         private readonly ITaskQueries _Queries;
+        private readonly ITaskBehavior _Behavior;
         private readonly IMapper _mapper;
 
         public TaskController(
             ITaskQueries Queries,
+            ITaskBehavior Behavior,
             IMapper mapper
             )
         {
             _Queries = Queries;
+            _Behavior = Behavior;
             _mapper = mapper;
         }
 
@@ -62,6 +68,31 @@ namespace TrellosKyBackAPI.Controllers
 
             return task;
         }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="createTaskCommand"></param>
+        /// <returns></returns>
+        /// 
+        [EnableCors("_myAllowSpecificOrigins")]
+        [HttpPost]
+        [Route("CreateTask")]
+        public async Task<TaskViewModel> CreateTaskAsync(CreateTaskCommand createTaskCommand)
+        {
+            TaskT newTask = _mapper.Map<TaskT>(createTaskCommand);
+
+            await _Behavior.CreateTaskAsync(newTask);
+
+            TaskViewModel taskViewModel = await _Queries.FindByIdAsync(newTask.Id);
+
+            return taskViewModel;
+
+        }
+
+
+       
 
     }
 }
