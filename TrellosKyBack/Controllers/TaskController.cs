@@ -79,6 +79,7 @@ namespace TrellosKyBackAPI.Controllers
         [EnableCors("_myAllowSpecificOrigins")]
         [HttpPost]
         [Route("CreateTask")]
+        [ProducesResponseType(204)]
         public async Task<TaskViewModel> CreateTaskAsync(CreateTaskCommand createTaskCommand)
         {
             TaskT newTask = _mapper.Map<TaskT>(createTaskCommand);
